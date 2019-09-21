@@ -20,6 +20,7 @@ describe("[UNIT] Testing the App component", () => {
 
     it("should increase counter when the button is clicked", () => {
       wrapper.find("button").simulate("click");
+
       expect(wrapper.find("h1").text()).toContain("1")
     });
   })
